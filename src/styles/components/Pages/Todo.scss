@@ -1,0 +1,22 @@
+.a__react_and_redux_todo {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .a__add_todo {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    width: 200px;
+  }
+
+  .f__filter {
+    display: flex;
+    flex-direction: column;
+  }
+}

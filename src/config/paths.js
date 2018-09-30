@@ -3,6 +3,7 @@ const paths = {
   common: {
     top: '/',
     todo: '/todo',
+    hotel: '/hotel',
   },
 };
 

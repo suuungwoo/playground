@@ -1,0 +1,24 @@
+@import "./../../_values.scss";
+
+.a__header {
+  background-color: $main_color;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      transition: 0.2s;
+      background-color: darken($main_color, 5%);
+    }
+  }
+}
