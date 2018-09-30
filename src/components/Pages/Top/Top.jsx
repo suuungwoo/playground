@@ -202,20 +202,16 @@ function Top(props: Props) {
             <div className="outer_five__piece" />
           </div>
           <div className="pieces">
-            <div className="future_ui__piece">
-              <Link to="/hotel">
-                ホテル検索
-                <div className="line" />
-                <div className="tip">近くのホテルを調べるよ</div>
-              </Link>
-            </div>
-            <div className="future_ui__piece">
-              <Link to="/todo">
-                Todo
-                <div className="line" />
-                <div className="tip">ReactとReduxを使ったTodoだよ</div>
-              </Link>
-            </div>
+            <Link to="/hotel" className="future_ui__piece">
+              ホテル検索
+              <div className="line" />
+              <div className="tip">近くのホテルを調べるよ</div>
+            </Link>
+            <Link to="/todo" className="future_ui__piece">
+              Todo
+              <div className="line" />
+              <div className="tip">Todoアプリだよ</div>
+            </Link>
             <div className="future_ui__piece blank" />
             <div className="future_ui__piece blank" />
             <div className="future_ui__piece blank" />

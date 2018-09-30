@@ -28,11 +28,6 @@ body {
     color: $app__link-color;
     cursor: pointer;
     font-weight: bold;
-
-    &:hover {
-      color: darken($app__link-color, 5%);
-      text-decoration: underline;
-    }
   }
 
   button {
@@ -42,7 +37,6 @@ body {
 
     &:hover {
       color: darken($app__main-color, 5%);
-      text-decoration: underline;
     }
   }
 
