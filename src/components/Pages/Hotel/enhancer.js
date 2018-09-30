@@ -13,16 +13,13 @@ const mapDispatchToProps = dispatch =>
 
 const enhance: HOC<*, *> = compose(
   setDisplayName('Hotel'),
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  ),
+  connect(mapStateToProps, mapDispatchToProps),
   lifecycle({
     componentDidMount() {
       const {startSearch} = this.props;
       startSearch();
     },
-  })
+  }),
 );
 
 export default enhance;

@@ -23,6 +23,7 @@ export const startSearch = () => (dispatch, getState) => {
             address,
             location,
           });
+
           return searchHotelByLocation(location);
         }
         case 'ZERO_RESULTS': {
