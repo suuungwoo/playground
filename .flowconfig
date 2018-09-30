@@ -1,0 +1,31 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/immutable/dist/immutable.js.flow
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.file_ext=.mjs
+module.file_ext=.jsx
+module.file_ext=.json
+module.file_ext=.scss
+esproposal.class_instance_fields=enable
+esproposal.class_static_fields=enable
+esproposal.export_star_as=enable
+esproposal.optional_chaining=enable
+module.name_mapper='^~config$' -> '<PROJECT_ROOT>/src/config/index.js'
+module.name_mapper='^~reducers$' -> '<PROJECT_ROOT>/src/reducers/index.js'
+module.name_mapper='^~actions$' -> '<PROJECT_ROOT>/src/actions/index.js'
+module.name_mapper='^~apis$' -> '<PROJECT_ROOT>/src/apis/index.js'
+module.name_mapper='^~store$' -> '<PROJECT_ROOT>/src/store/index.js'
+module.name_mapper='^~utils$' -> '<PROJECT_ROOT>/src/utils/index.js'
+module.name_mapper='^~validates$' -> '<PROJECT_ROOT>/src/validates/index.js'
+module.name_mapper='^~Children$' -> '<PROJECT_ROOT>/src/components/Routes/Children/index.js'
+module.name_mapper='^~Common$' -> '<PROJECT_ROOT>/src/components/Common/index.js'
+module.name_mapper='^~Pages$' -> '<PROJECT_ROOT>/src/components/Pages/index.js'
+
+[strict]

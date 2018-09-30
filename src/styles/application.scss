@@ -1,0 +1,61 @@
+body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    min-height: 30px;
+    margin: 0;
+  }
+
+  h2 {
+    min-height: 30px;
+  }
+
+  h3 {
+    min-height: 23px;
+  }
+
+  div,
+  span,
+  p {
+    margin: 0;
+    font-size: #{$app__font-size}px;
+    line-height: $app__line-height;
+  }
+
+  a {
+    color: $app__link-color;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      color: darken($app__link-color, 5%);
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    color: $app__main-color;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      color: darken($app__main-color, 5%);
+      text-decoration: underline;
+    }
+  }
+
+  @include gc__placeholder();
+
+  ::selection {
+    background: $app__main-color;
+    color: $app__white-color;
+  }
+
+  //Firefox
+  ::-moz-selection {
+    background: $app__main-color;
+    color: $app__white-color;
+  }
+}

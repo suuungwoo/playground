@@ -1,0 +1,33 @@
+// app
+$app__main-color: #fa6681;
+$app__accent-color: #245492;
+$app__white-color: #fff;
+$app__error-color: #d95858;
+$app__warning-color: #ffe121;
+$app__success-color: #5ba19b;
+$app__black-color: #555;
+$app__dark-color: #8f9aae;
+$app__link-color: $app__main-color;
+$app__title-size: 36;
+$app__font-size: 16;
+$app__line-height: 1.7;
+
+// @gemcook/styles
+$gc__main-color: $app__main-color;
+$gc__accent-color: #245492;
+$gc__white-color: #fff;
+$gc__error-color: #d95858;
+$gc__warning-color: #ffe121;
+$gc__success-color: #5ba19b;
+$gc__black-color: #555;
+$gc__dark-color: #8f9aae;
+
+// @gemcook/styles
+$table__main-color: $app__main-color;
+$table__link-color: $app__main-color;
+
+// @gemcook/form
+$form__main-color: $app__main-color;
+
+// @gemcook/pagination
+$pagination__main-color: $app__main-color;
