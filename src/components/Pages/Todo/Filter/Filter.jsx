@@ -5,7 +5,7 @@ import {Link} from './Link';
 function Filter() {
   return (
     <div className="a__filter">
-      <h3>フィルター</h3>
+      <h2>フィルター</h2>
       <div className="f__filter">
         <Link filter="SHOW_ALL">全タスク</Link>
         <Link filter="SHOW_ACTIVE">未完了</Link>

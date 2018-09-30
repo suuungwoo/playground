@@ -6,10 +6,12 @@ import {TodoList} from './TodoList';
 
 function Todo(props) {
   return (
-    <div className="a__react_and_redux_todo">
+    <div className="a__todo">
+      <h1 className="todo_title">Todo</h1>
+
       <AddTodo />
-      <TodoList />
       <Filter />
+      <TodoList />
     </div>
   );
 }

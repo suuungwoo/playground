@@ -28,15 +28,41 @@ body {
     color: $app__link-color;
     cursor: pointer;
     font-weight: bold;
+    outline: none;
   }
 
   button {
+    border: solid 2px $app__main-color;
+    border-radius: 20px;
     color: $app__main-color;
     cursor: pointer;
     font-weight: bold;
+    outline: none;
+    transition: 0.2s;
 
     &:hover {
-      color: darken($app__main-color, 5%);
+      background-color: $app__main-color;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: darken($app__main-color, 5%);
+    }
+  }
+
+  input {
+    padding: {
+      right: 8px;
+      left: 8px;
+    }
+
+    border: solid 2px $app__black-color;
+    border-radius: 2px;
+    outline: none;
+
+    &:focus {
+      border: 2px solid $app__main-color;
+      color: $app__main-color;
     }
   }
 

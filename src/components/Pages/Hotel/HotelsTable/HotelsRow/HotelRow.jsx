@@ -2,6 +2,7 @@ import React from 'react';
 
 function HotelRow(props) {
   const {hotel} = props;
+
   return (
     <tr>
       <td>

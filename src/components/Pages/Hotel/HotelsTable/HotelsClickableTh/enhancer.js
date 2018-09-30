@@ -19,17 +19,14 @@ const mapDispatchToProps = dispatch =>
 
 const enhance: HOC<*, *> = compose(
   setDisplayName('HotelsClickableTh'),
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  ),
+  connect(mapStateToProps, mapDispatchToProps),
   lifecycle({}),
   withHandlers({
     onClick: props => () => {
       const {setSortKey, sortKey} = props;
       setSortKey(sortKey);
     },
-  })
+  }),
 );
 
 export default enhance;

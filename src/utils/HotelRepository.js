@@ -25,10 +25,11 @@ const searchHotelByLocation = location => {
           longitude: basicInfo.longitude,
         },
       );
+
       return {
         id: basicInfo.hotelNo,
         name: basicInfo.hotelName,
-        url: basicInfo.hotelInfomatUrl,
+        url: basicInfo.hotelInformationUrl,
         thumbUrl: basicInfo.hotelThumbnailUrl,
         price: basicInfo.hotelMinCharge,
         reviewAverage: basicInfo.reviewAverage,

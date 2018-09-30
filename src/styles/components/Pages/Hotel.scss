@@ -1,12 +1,21 @@
-.search_page {
+.a__search_hotel {
   .geocode_result {
     text-align: left;
+
+    @include mq_down() {
+      list-style: none;
+      text-align: center;
+      padding: {
+        top: 24px;
+        bottom: 40px;
+      }
+    }
   }
 
   .hotels_clickable_th {
-    color: blue;
-    cursor: pointer;
     width: 80px;
+    color: $app__main-color;
+    cursor: pointer;
   }
 
   .hotel_price_column {
@@ -15,12 +24,27 @@
 
   td {
     padding: 4px;
+
+    &:first-child {
+      width: 100px;
+      height: 100px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 
   .map {
-    height: 30vw;
     width: 30vw;
-    margin: 20px;
+    height: 30vw;
+
+    @include mq_down() {
+      width: 100%;
+      height: 100vw;
+      max-height: 560px;
+    }
   }
 
   ul {
@@ -29,30 +53,89 @@
 
   .search_form {
     text-align: center;
-    margin-bottom: 40px;
+    padding: {
+      right: 16px;
+      bottom: 40px;
+      left: 16px;
+    }
+
+    input {
+      height: 40px;
+      margin: {
+        right: 16px;
+      }
+
+      @include mq_down('sm') {
+        width: 100%;
+      }
+    }
   }
 
-  $search_form_font_size: 24px;
-
   .place_input {
-    font-size: $search_form_font_size;
-    padding: 5px 3px 6px;
+    width: 500px;
+    font-size: 24px;
   }
 
   .submit_button {
-    -webkit-appearance: none;
-    font-size: $search_form_font_size;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    font-size: 24px;
+
+    @include mq_down('sm') {
+      width: 100%;
+      margin: {
+        top: 8px;
+      }
+    }
   }
 
-  .app_title {
+  .hotel_title {
     text-align: center;
+    padding: {
+      top: 40px;
+      bottom: 24px;
+    }
   }
 
   .result_area {
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
+
+    @include mq_down() {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .result_map {
+      padding: {
+        right: 16px;
+        left: 16px;
+      }
+
+      @include mq_down() {
+        width: 100%;
+      }
+    }
+
+    .result_hotels {
+      padding: {
+        right: 16px;
+      }
+
+      @include mq_down() {
+        padding: {
+          left: 12px;
+        }
+      }
+
+      h2 {
+        @include mq_down() {
+          text-align: center;
+          padding: {
+            bottom: 24px;
+          }
+        }
+      }
+    }
   }
 }

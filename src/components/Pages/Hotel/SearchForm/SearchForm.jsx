@@ -12,7 +12,9 @@ function SearchForm(props) {
         value={place}
         onChange={onChange}
       />
-      <input className="submit_button" type="submit" value="検索" />
+      <button className="submit_button" type="submit">
+        検索
+      </button>
     </form>
   );
 }

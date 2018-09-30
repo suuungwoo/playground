@@ -25,16 +25,13 @@ const mapDispatchToProps = dispatch =>
 
 const enhance: HOC<*, *> = compose(
   setDisplayName('TodoList'),
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  ),
+  connect(mapStateToProps, mapDispatchToProps),
   withHandlers({
     onTodoClick: props => id => {
       const {toggleTodo} = props;
       toggleTodo(id);
     },
-  })
+  }),
 );
 
 export default enhance;

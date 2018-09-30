@@ -1,6 +1,7 @@
 import {type HOC, compose, setDisplayName, withHandlers} from 'recompose';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import {storage} from 'store';
 
 import {addTodo} from '../../../../actions';
 

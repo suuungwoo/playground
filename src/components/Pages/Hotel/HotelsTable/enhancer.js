@@ -10,10 +10,7 @@ const mapStateToProps = state => ({
 
 const enhance: HOC<*, *> = compose(
   setDisplayName('HotelsTable'),
-  connect(
-    mapStateToProps,
-    null
-  )
+  connect(mapStateToProps, null),
 );
 
 export default enhance;
