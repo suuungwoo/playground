@@ -6,6 +6,7 @@ import enhance from './enhancer';
 
 function NotFound(props: Props) {
   const {goToTop} = props;
+
   return (
     <div className="a__not_found">
       <h1>NotFound</h1>
