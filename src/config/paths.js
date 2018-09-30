@@ -2,6 +2,7 @@
 const paths = {
   common: {
     top: '/',
+    todo: '/todo',
   },
 };
 

@@ -21,6 +21,7 @@
     "aws-amplify": "^0.4.6",
     "aws-amplify-react": "0.1.43",
     "connected-react-router": "4.3.0",
+    "geolib": "^2.0.24",
     "graphql-tag": "2.9.2",
     "history": "4.7.2",
     "immutable": "4.0.0-rc.9",
