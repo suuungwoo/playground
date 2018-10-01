@@ -6,7 +6,8 @@ const sortedHotels = (hotels, sortKey) => {
   if (sortKey === 'price' || sortKey === 'distance') {
     return _.sortBy(hotels, sortKey);
   } else {
-    return _.orderBy(hotels, sortKey, 'desc');
+    const newHotels = hotels.filter(v => v[sortKey]);
+    return _.orderBy(newHotels, sortKey, 'desc');
   }
 };
 
