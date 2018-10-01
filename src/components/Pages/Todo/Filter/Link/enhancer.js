@@ -4,12 +4,9 @@ import {connect} from 'react-redux';
 
 import {visibilityFilter} from '../../../../../actions';
 
-const mapStateToProps = (state, ownProps) => (
-  console.log(ownProps.filter),
-  {
-    active: ownProps.filter === state.visibilityFilter,
-  }
-);
+const mapStateToProps = (state, ownProps) => ({
+  active: ownProps.filter === state.visibilityFilter,
+});
 const mapDispatchToProps = dispatch =>
   bindActionCreators({visibilityFilter}, dispatch);
 

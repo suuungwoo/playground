@@ -6,8 +6,8 @@ function TodoList(props) {
   const {todos, onTodoClick} = props;
 
   return (
-    <ul>
-      {todos
+    <ul className="a__todo_list">
+      {todos.length !== 0
         ? todos.map(todo => (
             <Todo
               key={todo.id}
@@ -15,7 +15,7 @@ function TodoList(props) {
               onClick={() => onTodoClick(todo.id)}
             />
           ))
-        : 'a'}
+        : 'Todoはありません'}
     </ul>
   );
 }

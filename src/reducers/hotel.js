@@ -3,6 +3,7 @@ import queryString from 'query-string';
 export const getPlaceParam = () => {
   // eslint-disable-next-line no-restricted-globals
   const params = queryString.parse(location.search);
+
   const place = params.place;
   if (place && place.length > 0) {
     return place;
