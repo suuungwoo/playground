@@ -4,13 +4,16 @@ import enhance from './enhancer';
 
 function Link(props) {
   const {children, onClick, active} = props;
-  if (active) {
-    return <span>{children}</span>;
-  }
   return (
-    <a href="#" onClick={onClick}>
-      {children}
-    </a>
+    <>
+      {active ? (
+        <span>{children}</span>
+      ) : (
+        <a href="#" onClick={onClick}>
+          {children}
+        </a>
+      )}
+    </>
   );
 }
 

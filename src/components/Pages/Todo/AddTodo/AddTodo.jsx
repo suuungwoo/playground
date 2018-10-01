@@ -15,7 +15,7 @@ function AddTodo(props) {
       />
       <button
         onClick={() => {
-          addTodo(input.value);
+          input.value && addTodo(input.value);
           input.value = '';
         }}
       >

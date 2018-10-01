@@ -13,10 +13,18 @@ function HotelRow(props) {
           {hotel.name}
         </a>
       </td>
-      <td>{hotel.price ? `${hotel.price}円` : '空室なし'}</td>
-      <td>{hotel.reviewAverage}</td>
-      <td>{hotel.reviewCount}</td>
-      <td>{hotel.distance}</td>
+      <td className={hotel.price || 'empty'}>
+        {hotel.price ? `${hotel.price}円` : '記載なし'}
+      </td>
+      <td className={hotel.reviewAverage || 'empty'}>
+        {hotel.reviewAverage ? `${hotel.reviewAverage}点` : '記載なし'}
+      </td>
+      <td className={hotel.reviewCount || 'empty'}>
+        {hotel.reviewCount ? `${hotel.reviewCount}個` : '記載なし'}
+      </td>
+      <td className={hotel.distance || 'empty'}>
+        {hotel.distance ? `${hotel.distance}m` : '記載なし'}
+      </td>
     </tr>
   );
 }

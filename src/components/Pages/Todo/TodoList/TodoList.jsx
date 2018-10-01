@@ -4,11 +4,18 @@ import enhance from './enhancer';
 
 function TodoList(props) {
   const {todos, onTodoClick} = props;
+
   return (
     <ul>
-      {todos.map(todo => (
-        <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
-      ))}
+      {todos
+        ? todos.map(todo => (
+            <Todo
+              key={todo.id}
+              {...todo}
+              onClick={() => onTodoClick(todo.id)}
+            />
+          ))
+        : 'a'}
     </ul>
   );
 }

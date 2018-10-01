@@ -13,10 +13,7 @@ const mapDispatchToProps = dispatch =>
 
 const enhance: HOC<*, *> = compose(
   setDisplayName('SearchForm'),
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  ),
+  connect(mapStateToProps, mapDispatchToProps),
   withHandlers({
     onSubmit: props => e => {
       e.preventDefault();
@@ -29,7 +26,7 @@ const enhance: HOC<*, *> = compose(
       e.preventDefault();
       setPlace(e.target.value);
     },
-  })
+  }),
 );
 
 export default enhance;
