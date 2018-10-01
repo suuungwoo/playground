@@ -3,24 +3,15 @@ import React from 'react';
 import enhance from './enhancer';
 
 function AddTodo(props) {
-  const {addTodo} = props;
+  const {onSubmit, onChange} = props;
   let input;
 
   return (
     <div className="a__add_todo">
-      <input
-        ref={node => {
-          input = node;
-        }}
-      />
-      <button
-        onClick={() => {
-          input.value && addTodo(input.value);
-          input.value = '';
-        }}
-      >
-        Add Todo
-      </button>
+      <form onSubmit={onSubmit}>
+        <input onChange={onChange} name="todo" />
+        <button>Add Todo</button>
+      </form>
     </div>
   );
 }

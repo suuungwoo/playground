@@ -10,7 +10,7 @@ function NotFound(props: Props) {
   return (
     <div className="a__not_found">
       <h1>NotFound</h1>
-      <Button onClick={goToTop}>To Dashboard</Button>
+      <Button onClick={goToTop}>To TOP</Button>
     </div>
   );
 }
