@@ -4,7 +4,6 @@ import enhance from './enhancer';
 
 function AddTodo(props) {
   const {onSubmit, onChange} = props;
-  let input;
 
   return (
     <div className="a__add_todo">

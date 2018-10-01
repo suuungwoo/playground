@@ -1,7 +1,7 @@
 import {type HOC, compose, setDisplayName, withHandlers} from 'recompose';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {storage} from 'store';
+
 import {addTodo} from '../../../../actions';
 
 const mapStateToProps = state => ({});
@@ -14,7 +14,8 @@ const enhance: HOC<*, *> = compose(
     onSubmit: props => e => {
       e.preventDefault();
       const {addTodo} = props;
-      addTodo(e.target.todo.value);
+      const value = e.target.todo.value;
+      value && addTodo(value);
       e.target.todo.value = '';
     },
     onChange: props => e => {
